@@ -1,0 +1,50 @@
+/* Custom spacing utilities for pixel-perfect alignment */
+.spacing-unit {
+  --base-unit: 8px;
+}
+
+.margin-xs { margin: calc(var(--base-unit) * 0.5); }
+.margin-sm { margin: var(--base-unit); }
+.margin-md { margin: calc(var(--base-unit) * 2); }
+.margin-lg { margin: calc(var(--base-unit) * 3); }
+.margin-xl { margin: calc(var(--base-unit) * 4); }
+
+.padding-xs { padding: calc(var(--base-unit) * 0.5); }
+.padding-sm { padding: var(--base-unit); }
+.padding-md { padding: calc(var(--base-unit) * 2); }
+.padding-lg { padding: calc(var(--base-unit) * 3); }
+.padding-xl { padding: calc(var(--base-unit) * 4); }
+
+/* Grid alignment helpers */
+.grid-container {
+  display: grid;
+  grid-gap: var(--base-unit);
+}
+
+/* Flex alignment helpers */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Precise positioning utilities */
+.position-relative { position: relative; }
+.position-absolute { position: absolute; }
+
+/* Exact pixel positioning helpers */
+.top-0 { top: 0; }
+.left-0 { left: 0; }
+.right-0 { right: 0; }
+.bottom-0 { bottom: 0; }
+
+/* Z-index management */
+.z-1 { z-index: 1; }
+.z-10 { z-index: 10; }
+.z-100 { z-index: 100; }
